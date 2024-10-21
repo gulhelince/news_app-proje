@@ -1,0 +1,55 @@
+.container {
+    padding: 20px;
+  }
+  .my-carousel {
+    max-width: 600px; /* Slider genişliği */
+    margin: 0 auto; /* Merkezleme */
+  }
+  
+
+mat-sidenav {
+    width: 280px;
+    border-right: none;
+    text-align: center;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin: 10px 0;
+    mat-icon {
+        margin-right: 8px;
+    }
+}
+
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+
+@tailwind utilities;
+@taliwind base;
+@taliwind components;
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

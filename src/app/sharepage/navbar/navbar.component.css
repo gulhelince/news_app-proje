@@ -1,0 +1,86 @@
+.navbar-light .navbar-nav .nav-link
+{
+    color: var(--secondary-color)
+}
+
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color: #7312ea;
+    text-decoration: underline;
+}
+
+/* .navbar-nav .nav-item .nav-link.active {
+    color: #01050a;
+    font-weight: bold;
+    border-bottom: 2px solid #01050a;
+  }
+   */
+
+/* Increase the height of the navbar */
+.navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 40px; /* Increase the top padding */
+    padding-bottom: 40px; /* Increase the bottom padding */
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Styling for the brand */
+  .navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #01050a;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-brand:hover {
+    color: #4d5155;
+  }
+
+  /* Styling for nav items */
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+  }
+
+  /* Styling for active links */
+  /*.navbar-nav .nav-item .nav-link.active {
+    color: #01050a;
+    font-weight: bold;
+    border-bottom: 2px solid #01050a;
+  }*/ 
+
+  /* Styling for the navbar-toggler */
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #e3e9f1;
+    border-radius: 3px;
+  }
+
+  /* Sticky navbar */
+  .navbar.fixed-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    .navbar-nav .nav-item .nav-link {
+      margin: 5px 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  }

@@ -1,0 +1,210 @@
+/* Genel Yapı ve Renkler */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #141414;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+  
+  .hero-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+  }
+  
+  .highlight {
+    color: #7312ea;
+    padding: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #7312ea;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #7312ea;
+  }
+  
+  .download-btn {
+    background-color: #7312ea;
+    color: #141414;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .download-btn:hover {
+    background-color: #7312ea;
+  }
+  
+  /* Services Section */
+  .services-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #141414;
+    color: white;
+  }
+  
+  .services-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .services-section .highlight {
+    color: #7312ea;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-card .read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7312ea;
+    color: #141414;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .service-card .read-more-btn:hover {
+    background-color: #008080;
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: #7312ea;
+    margin-bottom: 20px;
+  }
+  
+ /* Latest Project Section */
+.latest-project-section {
+    text-align: center;
+    margin-top: 0px;
+    color: #fff;
+    padding: 100px;
+    background-color: #141414;
+  }
+  
+  .latest-project-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .latest-project-section h2 span {
+    color: #7312ea;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .grid-item {
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(238, 236, 236, 0.2);
+    display: block;
+    border-radius: 20px;
+    object-fit: cover; /* Resmin kesilmeden container içine sığmasını sağlar */
+    margin: 0 auto; /* Resmi ortalar */
+  }
+  
+  
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Resimlerin maksimum genişliği */
+    max-height: 500px; /* Resimlerin maksimum yüksekliği */
+    display: block;
+    border-radius: 20px;
+    object-fit: cover; /* Resmin kesilmeden container içine sığmasını sağlar */
+    margin: 0 auto; /* Resmi ortalar */
+  }
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* 1200px ve altı genişlikte 2 sütun */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr; /* 768px ve altı genişlikte tek sütun */
+    }
+  
+    .latest-project-section {
+      padding: 60px 20px; /* Küçük ekranlarda padding'i azaltıyoruz */
+    }
+  
+    .latest-project-section h2 {
+      font-size: 28px; /* Başlık boyutunu küçültüyoruz */
+    }
+  
+    .grid-item img {
+      border-radius: 10px; /* Küçük ekranlarda daha küçük border-radius */
+    }
+  }
+  
